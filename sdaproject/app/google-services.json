@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "220617781376",
+    "project_id": "frugalflowapp",
+    "storage_bucket": "frugalflowapp.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:220617781376:android:86eb0620715f473193f665",
+        "android_client_info": {
+          "package_name": "com.sdaproject.frugalflowapp"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCyJf_fTmjVDztg0DmLsQqwW9j1AhbTjxw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

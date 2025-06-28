@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:background="#FFFFFF"
+    android:layout_marginBottom="0dp">
+
+    <Button
+        android:id="@+id/back_button"
+        style="@style/CustomBackButton" />
+
+
+    <TextView
+        android:id="@+id/header_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Saving Goals"
+        android:textSize="28sp"
+        android:fontFamily="sans-serif-medium"
+        android:gravity="center"
+        android:textColor="#000000"
+        android:padding="16dp"
+        android:layout_marginTop="20dp"/>
+
+    <!-- Add Saving Goal -->
+    <Button
+        android:id="@+id/add_saving_goal_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Add Saving Goal"
+        android:layout_marginBottom="2dp"
+        android:backgroundTint="#366F9A"
+        android:textColor="#FFFFFF"
+        android:layout_marginTop="20dp"/>
+
+    <!-- View Saving Goals -->
+    <Button
+        android:id="@+id/view_saving_goals_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="View Saving Goals"
+        android:backgroundTint="#366F9A"
+        android:textColor="#FFFFFF" />
+</LinearLayout>

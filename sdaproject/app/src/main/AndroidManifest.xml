@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <!-- Permissions -->
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.Frugalflow"
+        tools:targetApi="31">
+
+        <!-- Launcher Activity -->
+        <activity
+            android:name=".ActivityMainPage"
+            android:exported="true"
+            android:theme="@style/Theme.Frugalflow">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <!-- Home Page -->
+        <activity
+            android:name=".HomeActivity"
+            android:exported="true"
+            android:theme="@style/Theme.Frugalflow" />
+
+        <!-- User Access -->
+        <activity android:name=".ActivitySignUp" android:exported="false"/>
+        <activity android:name=".ActivitySignIn" android:exported="false"/>
+
+        <!-- Budget and Saving Features -->
+        <activity android:name=".AddBudgetActivity" android:exported="false"/>
+        <activity android:name=".AddSavingGoalActivity" android:exported="false"/>
+        <activity android:name=".ViewBudgetsActivity" android:exported="false"/>
+        <activity android:name=".ViewSavingGoalsActivity" android:exported="false"/>
+        <activity android:name=".ActivityBudget" android:exported="false"/>
+        <activity android:name=".ActivitySavingGoals" android:exported="false"/>
+
+        <!-- Transactions and Forecasting -->
+        <activity android:name=".ActivityCancelTransaction" android:exported="false"/>
+        <activity android:name=".ActivityNetWorthCalculation" android:exported="false"/>
+        <activity android:name=".ActivityForecasting" android:exported="false"/>
+        <activity android:name=".ActivityFinancialReport" />
+
+        <!-- Settings and Config -->
+        <activity android:name=".ActivityDashboard" android:exported="false"/>
+        <activity android:name=".ActivityNotifications" android:exported="false"/>
+        <activity android:name=".ActivityPlanning" android:exported="false"/>
+        <activity android:name=".ActivitySetCashBalance" android:exported="false"/>
+        <activity android:name=".ActivitySetCurrency" android:exported="false"/>
+        <activity android:name=".ActivitySettings" android:exported="false"/>
+        <activity android:name=".AddTransactionActivity" />
+        <!-- Other Internal Activities -->
+        <activity android:name=".MainActivity" android:exported="false"/>
+        <activity android:name=".MainActivity2" android:exported="false"/>
+        <activity android:name=".TransferActivity" android:exported="false"/>
+        <activity android:name=".CategoryExploreActivity" android:exported="false"/>
+        <activity android:name=".IncomeActivity" android:exported="false"/>
+        <activity
+
+            android:name=".FoodCategoryActivity"
+            android:label="Food Expenses"
+            android:parentActivityName=".CategoryExploreActivity"
+            android:exported="false">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".CategoryExploreActivity" />
+        </activity>
+
+        <activity android:name=".TransportationCategoryActivity" />
+        <activity android:name=".HousingCategoryActivity" />
+        <activity android:name=".EntertainmentCategoryActivity" />
+        <activity android:name=".UtilitiesCategoryActivity" />
+        <activity android:name=".HealthCareCategoryActivity" />
+        <activity android:name=".ClothingCategoryActivity" />
+
+    </application>
+</manifest>

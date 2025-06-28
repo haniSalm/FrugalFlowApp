@@ -1,0 +1,113 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:app="http://schemas.android.com/apk/res-auto"
+xmlns:tools="http://schemas.android.com/tools"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+android:padding="16dp">
+
+<!-- Back Button at top-left -->
+<Button
+    android:id="@+id/back_button"
+    style="@style/CustomBackButton"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_alignParentStart="true"
+    android:layout_alignParentTop="true" />
+
+<!-- Category Header -->
+<LinearLayout
+    android:id="@+id/header_layout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_below="@id/back_button"
+    android:layout_marginTop="8dp"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:layout_marginBottom="16dp">
+
+    <TextView
+        android:id="@+id/category_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/healthcare_category"
+        android:textSize="24sp"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:id="@+id/category_description"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/healthcare_description"
+        android:layout_marginTop="4dp"/>
+</LinearLayout>
+
+<!-- Budget Information -->
+<LinearLayout
+    android:id="@+id/budget_layout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_below="@id/header_layout"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:layout_marginBottom="16dp">
+
+    <TextView
+        android:id="@+id/budget_amount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        tools:text="Budget: PKR 5000.00"/>
+
+    <TextView
+        android:id="@+id/remaining_budget"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="18sp"
+        android:layout_marginTop="8dp"
+        tools:text="Remaining: PKR 3500.00"/>
+</LinearLayout>
+
+<!-- Empty State -->
+<LinearLayout
+    android:id="@+id/empty_state"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_below="@id/budget_layout"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:padding="32dp">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/no_healthcare_expenses"
+        android:textSize="18sp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="@string/add_first_expense"
+        android:textColor="@android:color/darker_gray"/>
+</LinearLayout>
+
+<!-- Transactions List -->
+<androidx.recyclerview.widget.RecyclerView
+    android:id="@+id/transactions_recycler"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_below="@id/empty_state"
+    android:visibility="gone" />
+
+<!-- Add Button -->
+<com.google.android.material.floatingactionbutton.FloatingActionButton
+    android:id="@+id/add_healthcare_expense"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_alignParentBottom="true"
+    android:layout_alignParentEnd="true"
+    android:layout_margin="16dp"
+    android:contentDescription="@string/add_expense"
+    app:srcCompat="@drawable/ic_add"
+    app:tint="@android:color/white" />
+</RelativeLayout>

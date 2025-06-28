@@ -1,0 +1,33 @@
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:layout_width="match_parent" android:layout_height="match_parent" android:background="#F0F4F8">
+    <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="vertical" android:padding="24dp">
+        <!--  Expense Summary Card  -->
+        <com.google.android.material.card.MaterialCardView android:layout_width="match_parent" android:layout_height="wrap_content" app:cardCornerRadius="16dp" app:cardElevation="6dp" app:cardBackgroundColor="@color/main_color" android:layout_marginBottom="24dp">
+            <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="vertical" android:padding="20dp">
+                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Total Expenses" android:textColor="@android:color/white" android:textSize="16sp" android:alpha="0.8"/>
+                <TextView android:id="@+id/tvTotalMonthlyExpenses" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="$3,500.00" android:textColor="@android:color/white" android:textSize="32sp" android:textStyle="bold" android:layout_marginTop="8dp"/>
+                <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="horizontal" android:layout_marginTop="16dp">
+                    <LinearLayout android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:orientation="vertical">
+                        <TextView android:id="@+id/tvExpenseGrowth" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="+7.2%" android:textColor="@android:color/white" android:textStyle="bold"/>
+                        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="This Month" android:textColor="@android:color/white" android:alpha="0.7" android:textSize="12sp"/>
+                    </LinearLayout>
+                    <com.google.android.material.button.MaterialButton android:id="@+id/btnAddExpense" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Add Expense" style="@style/Widget.MaterialComponents.Button.OutlinedButton" android:textColor="@android:color/white" app:strokeColor="@android:color/white" app:strokeWidth="2dp"/>
+                </LinearLayout>
+            </LinearLayout>
+        </com.google.android.material.card.MaterialCardView>
+        <!--  Expense Categories Card  -->
+        <com.google.android.material.card.MaterialCardView android:layout_width="match_parent" android:layout_height="wrap_content" app:cardCornerRadius="16dp" app:cardElevation="4dp" app:cardBackgroundColor="#FFFFFF" android:layout_marginBottom="16dp">
+            <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="vertical" android:padding="16dp">
+                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Expense Categories" android:textSize="20sp" android:textStyle="bold" android:textColor="#333333" android:layout_marginBottom="16dp"/>
+                <androidx.recyclerview.widget.RecyclerView android:id="@+id/recyclerViewExpenseCategories" android:layout_width="match_parent" android:layout_height="300dp" android:scrollbars="vertical"/>
+            </LinearLayout>
+        </com.google.android.material.card.MaterialCardView>
+        <!--  Monthly Expense Breakdown Card  -->
+        <com.google.android.material.card.MaterialCardView android:layout_width="match_parent" android:layout_height="wrap_content" app:cardCornerRadius="16dp" app:cardElevation="4dp" app:cardBackgroundColor="#FFFFFF">
+            <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="vertical" android:padding="16dp">
+                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Monthly Expense Breakdown" android:textSize="20sp" android:textStyle="bold" android:textColor="#333333" android:layout_marginBottom="16dp"/>
+                <!--  Placeholder for expense breakdown chart or visualization  -->
+                <View android:layout_width="match_parent" android:layout_height="200dp" android:background="#E0E0E0" android:layout_gravity="center"/>
+            </LinearLayout>
+        </com.google.android.material.card.MaterialCardView>
+    </LinearLayout>
+</androidx.core.widget.NestedScrollView>

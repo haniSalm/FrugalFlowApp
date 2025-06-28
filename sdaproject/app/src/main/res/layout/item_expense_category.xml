@@ -1,0 +1,38 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="vertical">
+    <!--  Food Category  -->
+    <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="horizontal" android:padding="16dp" android:background="?attr/selectableItemBackground">
+        <ImageView android:id="@+id/ivUniqueCategoryIcon" android:layout_width="40dp" android:layout_height="40dp" android:layout_marginEnd="16dp" android:src="@drawable/ic_food" android:contentDescription="Food Category Icon"/>
+        <LinearLayout android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:orientation="vertical">
+            <TextView android:id="@+id/tvUniqueCategoryName" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Food" android:textSize="16sp" android:textColor="#333333"/>
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Expenses this month" android:textSize="12sp" android:textColor="#666666"/>
+        </LinearLayout>
+        <TextView android:id="@+id/tvUniqueCategoryAmount" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="$500.00" android:textSize="16sp" android:textColor="#333333" android:textStyle="bold"/>
+    </LinearLayout>
+    <!--  Entertainment Category  -->
+    <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="horizontal" android:padding="16dp" android:background="?attr/selectableItemBackground">
+        <ImageView android:id="@+id/ivEntertainmentCategoryIcon" android:layout_width="40dp" android:layout_height="40dp" android:layout_marginEnd="16dp" android:src="@drawable/ic_entertainment" android:contentDescription="Entertainment Category Icon"/>
+        <LinearLayout android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:orientation="vertical">
+            <TextView android:id="@+id/tvEntertainmentCategoryName" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Entertainment" android:textSize="16sp" android:textColor="#333333"/>
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Expenses this month" android:textSize="12sp" android:textColor="#666666"/>
+        </LinearLayout>
+        <TextView android:id="@+id/tvEntertainmentCategoryAmount" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="$250.00" android:textSize="16sp" android:textColor="#333333" android:textStyle="bold"/>
+    </LinearLayout>
+    <!--  Transport Category  -->
+    <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="horizontal" android:padding="16dp" android:background="?attr/selectableItemBackground">
+        <ImageView android:id="@+id/ivTransportCategoryIcon" android:layout_width="40dp" android:layout_height="40dp" android:layout_marginEnd="16dp" android:src="@drawable/ic_transport" android:contentDescription="Transport Category Icon"/>
+        <LinearLayout android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:orientation="vertical">
+            <TextView android:id="@+id/tvTransportCategoryName" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Transport" android:textSize="16sp" android:textColor="#333333"/>
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Expenses this month" android:textSize="12sp" android:textColor="#666666"/>
+        </LinearLayout>
+        <TextView android:id="@+id/tvTransportCategoryAmount" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="$150.00" android:textSize="16sp" android:textColor="#333333" android:textStyle="bold"/>
+    </LinearLayout>
+    <!--  Utilities Category  -->
+    <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="horizontal" android:padding="16dp" android:background="?attr/selectableItemBackground">
+        <ImageView android:id="@+id/ivUtilitiesCategoryIcon" android:layout_width="40dp" android:layout_height="40dp" android:layout_marginEnd="16dp" android:src="@drawable/ic_utilities" android:contentDescription="Utilities Category Icon"/>
+        <LinearLayout android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:orientation="vertical">
+            <TextView android:id="@+id/tvUtilitiesCategoryName" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Utilities" android:textSize="16sp" android:textColor="#333333"/>
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Expenses this month" android:textSize="12sp" android:textColor="#666666"/>
+        </LinearLayout>
+        <TextView android:id="@+id/tvUtilitiesCategoryAmount" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="$200.00" android:textSize="16sp" android:textColor="#333333" android:textStyle="bold"/>
+    </LinearLayout>
+</LinearLayout>

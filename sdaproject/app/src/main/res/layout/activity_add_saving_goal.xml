@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginBottom="0dp"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:background="#FFFFFF">
+
+    <!-- Back Button -->
+    <Button
+        android:id="@+id/back_button"
+        style="@style/CustomBackButton" />
+
+    <!-- Title for Add Saving Goal Page -->
+    <TextView
+        android:id="@+id/header_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Add Saving Goal"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:textColor="#000000"
+        android:padding="16dp" />
+
+    <!-- Add Saving Goal form or content can go here -->
+    <!-- For example, EditText for goal name, amount, etc. -->
+    <EditText
+        android:id="@+id/budget_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter Saving Goal Name"
+        android:padding="8dp"
+        android:layout_marginBottom="16dp"/>
+
+    <!-- Save Saving Goal Button -->
+    <Button
+        android:id="@+id/save_budget_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Save Saving Goal"
+        android:backgroundTint="#366F9A"
+        android:textColor="#FFFFFF" />
+</LinearLayout>

@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    android:background="@color/white">
+
+    <Button
+        android:id="@+id/back_button"
+        style="@style/CustomBackButton" />
+
+    <TextView
+        android:id="@+id/my_text"
+        android:layout_width="wrap_content"
+        android:layout_height="60dp"
+        android:layout_gravity="center"
+        android:fontFamily="sans-serif-medium"
+        android:padding="9dp"
+        android:text="Set Base Currency"
+        android:textColor="#000000"
+        android:textSize="30sp"
+        android:layout_marginTop="20dp" />
+
+    <Spinner
+        android:id="@+id/currency_spinner"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_marginTop="16dp" />
+
+    <Button
+        android:id="@+id/save_currency_button"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:text="Next"
+        android:layout_marginTop="32dp"
+        android:backgroundTint="#366F9A"
+        android:textColor="#ffffff"
+        android:textSize="16sp"/>
+</LinearLayout>

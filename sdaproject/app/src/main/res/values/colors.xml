@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="purple_200">#FFBB86FC</color>
+    <color name="primaryColor">#FF6200EE</color>
+    <color name="primaryDarkColor">#FF3700B3</color>
+    <color name="accentColor">#FF03DAC5</color>
+
+    <color name="purple_500">#FF6200EE</color>
+    <color name="purple_700">#FF3700B3</color>
+    <color name="teal_200">#FF03DAC5</color>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="red">#ED1C24</color>
+    <color name="yellow">#FFF200</color>
+    <color name="orange">#FF7F27</color>
+    <color name="green">#377D22</color>
+    <color name="primary_color">#6200EE</color>
+    <color name="gray">#808080</color>
+    <color name="gray_light">#E0E0E0</color>
+
+    <color name="main_color">#366F9A</color>"
+    <color name="main_color_2">#D5D5CD</color>
+    <color name="purple">#753475</color>
+    <color name="brown">#774342</color>
+    <color name="blue">#0023F5</color>
+    <color name="teal_700">#FF018786</color>
+    <color name="mustard">#817F26</color>
+    <color name="lightgrey">#F5F5F5</color>
+    <color name="darkgrey">#7F7F7F</color>
+    <color name="pink">#EA3680</color>
+    <color name="primary">#4CAF50</color> <!-- or any color you prefer -->
+
+    <!-- Blue Theme Colors -->
+    <color name="primary_blue">#366F9A</color>
+    <color name="primary_blue_dark">#1E4A6A</color>
+    <color name="bgColor">#FAFAFA</color> <!-- Background color -->
+
+    <!-- Text Colors -->
+    <color name="text_primary">#212121</color>
+    <color name="text_secondary">#757575</color>
+    <color name="primaryDark">#2E7D32</color>
+
+    <color name="primaryColorDark">#3700B3</color> <!-- same as your light theme primaryDarkColor or similar -->
+    <color name="primaryDarkColorDark">#3700B3</color> <!-- add others similarly -->
+    <color name="accentColorDark">#03DAC5</color>
+    <color name="backgroundDark">#FFFFFF</color> <!-- or light bg -->
+    <color name="textColorDark">#000000</color> <!-- black text for light mode -->
+
+</resources>

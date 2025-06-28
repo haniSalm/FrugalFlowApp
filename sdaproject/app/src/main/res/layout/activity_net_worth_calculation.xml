@@ -1,0 +1,254 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp"
+        android:background="@color/white">
+
+        <Button
+            android:id="@+id/back_button"
+            style="@style/CustomBackButton" />
+
+        <!-- Income and Expense Labels -->
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="65dp">
+
+            <TextView
+                android:id="@+id/expenseTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="EXPENSE"
+                android:textSize="17sp"
+                android:textColor="#000000"
+                android:textStyle="bold"
+                android:layout_marginStart="16dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent" />
+
+            <TextView
+                android:id="@+id/incomeTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="INCOME"
+                android:textSize="17sp"
+                android:textColor="#000000"
+                android:textStyle="bold"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:layout_marginEnd="16dp" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <!-- Income and Expense Amounts -->
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/expenseAmtTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="$45500"
+                android:textSize="17sp"
+                android:textColor="@color/red"
+                android:textStyle="bold"
+                android:layout_marginStart="16dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent" />
+
+            <TextView
+                android:id="@+id/incomeAmtTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="$50,000"
+                android:textSize="17sp"
+                android:textColor="@color/green"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"
+                android:layout_marginEnd="16dp" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/lightgrey"
+            android:layout_marginVertical="20dp" />
+
+        <TextView
+            android:id="@+id/netWorthTextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Net Worth: $4500"
+            android:textSize="24sp"
+            android:textColor="#000000"
+            android:layout_marginBottom="29dp"
+            android:gravity="center"
+            android:textStyle="bold" />
+
+        <!-- CATEGORY PROGRESS BARS -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="16dp"
+            android:background="@color/lightgrey">
+
+            <!-- Food -->
+            <TextView android:id="@+id/category_food"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Food"
+                android:textStyle="bold"
+                android:textSize="18sp"
+                android:textColor="@android:color/black" />
+            <ProgressBar
+                android:id="@+id/progressBarFood"
+                style="@android:style/Widget.ProgressBar.Horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:max="100"
+                android:progress="0"
+                android:layout_marginBottom="10dp"
+                android:progressTint="@color/red" />
+
+            <!-- Transportation -->
+            <TextView android:id="@+id/category_transportation"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Transportation"
+                android:textStyle="bold"
+                android:textSize="18sp"
+                android:textColor="@android:color/black" />
+            <ProgressBar
+                android:id="@+id/progressBarTransportation"
+                style="@android:style/Widget.ProgressBar.Horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:max="100"
+                android:progress="0"
+                android:layout_marginBottom="10dp"
+                android:progressTint="@color/blue" />
+
+            <!-- Housing -->
+            <TextView android:id="@+id/category_housing"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Housing"
+                android:textStyle="bold"
+                android:textSize="18sp"
+                android:textColor="@android:color/black" />
+            <ProgressBar
+                android:id="@+id/progressBarHousing"
+                style="@android:style/Widget.ProgressBar.Horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:max="100"
+                android:progress="0"
+                android:layout_marginBottom="10dp"
+                android:progressTint="@color/pink" />
+
+            <!-- Entertainment -->
+            <TextView android:id="@+id/category_entertainment"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Entertainment"
+                android:textStyle="bold"
+                android:textSize="18sp"
+                android:textColor="@android:color/black" />
+            <ProgressBar
+                android:id="@+id/progressBarEntertainment"
+                style="@android:style/Widget.ProgressBar.Horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:max="100"
+                android:progress="0"
+                android:layout_marginBottom="10dp"
+                android:progressTint="@color/orange" />
+
+            <!-- Utilities -->
+            <TextView android:id="@+id/category_utilities"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Utilities"
+                android:textStyle="bold"
+                android:textSize="18sp"
+                android:textColor="@android:color/black" />
+            <ProgressBar
+                android:id="@+id/progressBarUtilities"
+                style="@android:style/Widget.ProgressBar.Horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:max="100"
+                android:progress="0"
+                android:layout_marginBottom="10dp"
+                android:progressTint="@color/teal_700" />
+
+            <!-- Healthcare -->
+            <TextView android:id="@+id/category_healthcare"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Healthcare"
+                android:textStyle="bold"
+                android:textSize="18sp"
+                android:textColor="@android:color/black" />
+            <ProgressBar
+                android:id="@+id/progressBarHealthcare"
+                style="@android:style/Widget.ProgressBar.Horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:max="100"
+                android:progress="0"
+                android:layout_marginBottom="10dp"
+                android:progressTint="@color/blue" />
+
+            <!-- Clothing -->
+            <TextView android:id="@+id/category_clothing"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Clothing"
+                android:textStyle="bold"
+                android:textSize="18sp"
+                android:textColor="@android:color/black" />
+            <ProgressBar
+                android:id="@+id/progressBarClothing"
+                style="@android:style/Widget.ProgressBar.Horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:max="100"
+                android:progress="0"
+                android:layout_marginBottom="10dp"
+                android:progressTint="@color/yellow" />
+
+            <!-- Other -->
+            <TextView android:id="@+id/category_other"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Other"
+                android:textStyle="bold"
+                android:textSize="18sp"
+                android:textColor="@android:color/black" />
+            <ProgressBar
+                android:id="@+id/progressBarOther"
+                style="@android:style/Widget.ProgressBar.Horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:max="100"
+                android:progress="0"
+                android:layout_marginBottom="10dp"
+                android:progressTint="@color/mustard" />
+        </LinearLayout>
+    </LinearLayout>
+</androidx.core.widget.NestedScrollView>

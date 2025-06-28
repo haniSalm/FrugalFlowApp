@@ -1,0 +1,99 @@
+<resources>
+<string name="app_name" translatable="false">frugalflow</string>
+<string name="image_description" translatable="false">string</string>
+<string name="budget_tracking_background" translatable="false">Budget tracking background</string>
+<string name="menu_button" translatable="false">Menu button</string>
+<string name="notification_button" translatable="false">Notification button</string>
+<string name="add_transaction_button" translatable="false">Add transaction button</string>
+<string name="home" translatable="false">Home</string>
+<string name="cash" translatable="false">Cash</string>
+<string name="cash_balance_placeholder" translatable="false">PKR 50,000.00</string>
+<string name="username_placeholder" translatable="false">John Doe</string>
+<string name="email_placeholder" translatable="false">john.doe@example.com</string>
+    <string name="Dashboard" translatable="false">Dashboard</string>
+
+<!-- Navigation Drawer Items -->
+<string name="nav_home" translatable="false">Home</string>
+<string name="nav_settings" translatable="false">Settings</string>
+<string name="nav_planning" translatable="false">Planning</string>
+<string name="nav_forecasting" translatable="false">Forecasting</string>
+<string name="nav_financial_report" translatable="false">Financial Report</string>
+<string name="nav_networth" translatable="false">Networth</string>
+
+<!-- AddTransactionActivity Strings -->
+<string name="amount_hint">Amount</string>
+<string name="description_hint">Description</string>
+<string name="date_hint">Date</string>
+<string name="save_button_text">Save Transaction</string>
+<string name="amount_required">Amount is required</string>
+<string name="amount_positive">Amount must be positive</string>
+<string name="invalid_amount">Invalid amount</string>
+<string name="transaction_saved_format">Saved: %1$s for %2$s (%3$s)</string>
+<string name="default_amount">$0.00</string>
+
+<!-- Food Category Strings -->
+<string name="food_category">Food</string>
+<string name="healthcare_category">HealthCare</string>
+<string name="clothing_category">Clothing</string>
+<string name="utilities_category">Utilities</string>
+<string name="entertainment_category">Entertainment</string>
+<string name="housing_category">Housing</string>
+<string name="transportation_category">Transportation</string>
+<string name="food_description">Delicious meals and snacks</string>
+<string name="healthcare_description">Doctor visits, medications, and medical supplies</string>
+
+<string name="entertainment_description">Movies, hobbies, and fun activities</string>
+<string name="utilities_description">Electricity, water, gas, and internet bills</string>
+<string name="clothing_description">Apparel, footwear, and accessories</string>
+
+<string name="housing_description">Rent, mortgage, and home maintenance</string>
+
+<string name="transportation_description">Daily commute, fuel, and travel expenses</string>
+<string name="no_expenses">No food expenses yet</string>
+<string name="no_clothing_expenses">No clothing expenses yet</string>
+<string name="no_healthcare_expenses">No healthcare expenses yet</string>
+<string name="no_housing_expenses">No housing expenses yet</string>
+<string name="no_utilities_expenses">No utilities expenses yet</string>
+<string name="no_entertainment_expenses">No entertainment expenses yet</string>
+<string name="no_transportation_expenses">No transportation expenses yet</string>
+<string name="add_first_expense">Tap + to add your first expense</string>
+<string name="add_expense">Add expense</string>
+<string name="budget_amount_format">Budget: %1$s %.2f</string>
+<string name="remaining_budget_format">Remaining: %1$s %.2f</string>
+<string name="no_budget_set">No budget set</string>
+
+<!-- Budget Strings -->
+<string name="budget_saved">Budget saved successfully</string>
+<string name="budget_update_failed">Failed to update budget</string>
+<string name="budget_load_failed">Failed to load budget</string>
+<string name="no_budget_for_category">No budget set for this category</string>
+
+<!-- Category Strings -->
+<string name="category_default">Select Category</string>
+<string name="food_title">🍔 Food</string>
+
+<!-- Category Array -->
+<string-array name="transaction_categories">
+    <item>Food</item>
+    <item>Transportation</item>
+    <item>Housing</item>
+    <item>Entertainment</item>
+    <item>Utilities</item>
+    <item>Healthcare</item>
+    <item>Other</item>
+</string-array>
+
+<!-- Error Messages -->
+<string name="error_field_required">This field is required</string>
+<string name="error_invalid_amount">Please enter a valid amount</string>
+<string name="transaction_saved">Transaction saved successfully</string>
+
+<!-- Success Messages -->
+<string name="success_transaction_saved">Transaction saved successfully</string>
+<string name="success_budget_updated">Budget updated successfully</string>
+
+<!-- Currency -->
+<string name="currency_pkr">PKR</string>
+<string name="transaction_load_failed">Failed to load transactions</string>
+
+</resources>
